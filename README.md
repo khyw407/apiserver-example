@@ -12,8 +12,7 @@
     -@Configuration, @EnableAutoConfiguration, @ComponentScan을 포함하는 의미를 갖는다. 
 
 
-        @Configuration - 스프링의 자바 기반 구성 클래스를 지정한다. 
-                          스프링 컨테이너가 해당 클래스를 빈 정의의 소스로 사용한다는 의미
+        @Configuration - 스프링의 자바 기반 구성 클래스를 지정한다. (스프링 컨테이너가 해당 클래스를 빈 정의의 소스로 사용한다는 의미)
                                              
                                              
         @EnableAutoConfiguration - classpath를 기반으로 ApplicationContext가 생성될 수 있도록 하는 역할.
@@ -30,6 +29,22 @@
 # 2. ResourceServerConfiguration.java
 <img width="530" alt="resourceserverconfiguration" src="https://user-images.githubusercontent.com/37721713/46646510-83800080-cbc5-11e8-8bc1-f17b9b8af610.PNG">
 
+
+*@Configuration
+
+    - 스프링의 자바 기반 구성 클래스를 지정한다. (스프링 컨테이너가 해당 클래스를 빈 정의의 소스로 사용한다는 의미)
+    
+    
+*@EnableResourceServer
+
+    - API 호출에 대한 요청을 검증하도록 설정, 유효한 Access token이 없는 요청의 경우 거부하도록 한다.(스프링 시큐리티 필터를 동작)
+    
+    
+*ResourceServerConfigurerAdapter
+
+    - ResourceOAuthSecurityConfiguration 클래스가 상속한 ResourceServerConfigurerAdapter는 ResourceServerConfigurer 인터페이스를 구현한 
+      단순 창구역할을 하는 클래스이다. configure(ResourceServerSecurityConfigurer), configure(HttpSecurity) 두 메소드를 재정의해서 
+      사용할 수 있다. 여기서는 configure(HttpSecurity)를 재정의하여 /test 리소스에 대한 접근을 제한한다.
 
 # 3. SampleTest.java
 <img width="530" alt="sampletest" src="https://user-images.githubusercontent.com/37721713/46646512-85e25a80-cbc5-11e8-8e6c-c3aebc70e1b2.PNG">
