@@ -5,13 +5,9 @@
 
 
 *@SpringBootApplication : 스프링부트 애플리케이션임을 나타내는 어노테이션을 의미
-
-
-                            @Configuration, @EnableAutoConfiguration, @ComponentScan을 포함하는 의미를 갖는다.
-                            
-                            
-                            @Configuration - 스프링의 자바 기반 구성 클래스를 지정한다. 
-                            
+                          @Configuration, @EnableAutoConfiguration, @ComponentScan을 포함하는 의미를 갖는다. 
+                          @Configuration - 스프링의 자바 기반 구성 클래스를 지정한다. 
+                          
                             
                                              스프링 컨테이너가 해당 클래스를 빈 정의의 소스로 사용한다는 의미
                                              
