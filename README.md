@@ -50,6 +50,16 @@
 <img width="530" alt="sampletest" src="https://user-images.githubusercontent.com/37721713/46646512-85e25a80-cbc5-11e8-8e6c-c3aebc70e1b2.PNG">
 
 
+*@RestContoller
+
+    - 해당 클래스가 controller 역할을 수행한다는 의미, @RestController는 @Controller와 달리 리턴 시 뷰를 만드는 것이 아닌 
+      REST 방식의 데이터를 리턴한다.
+      
+      
+*@RequestMapping
+
+    - 요청을 어떤 Controller, 어떤 메소드가 처리할지를 맵핑하기 위한 어노테이션
+
 # 4. application.yml
 <img width="530" alt="application" src="https://user-images.githubusercontent.com/37721713/46646495-76fba800-cbc5-11e8-9939-368c4a2d1fae.PNG">
 
