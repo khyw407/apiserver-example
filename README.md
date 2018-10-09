@@ -3,7 +3,8 @@
 # 1. ApiserverApplication.java
 <img width="530" alt="apiserverapplication" src="https://user-images.githubusercontent.com/37721713/46646492-7105c700-cbc5-11e8-94f2-51bfc65008a5.PNG">
 
-## *@SpringBootApplication : 스프링부트 애플리케이션임을 나타내는 어노테이션을 의미
+
+*@SpringBootApplication : 스프링부트 애플리케이션임을 나타내는 어노테이션을 의미
 
 
                             @Configuration, @EnableAutoConfiguration, @ComponentScan을 포함하는 의미를 갖는다.
@@ -23,7 +24,7 @@
                                              
                                              
 
-## *SpringApplication.run : 스프링부트 애플리케이션을 실행시키는 메소드
+*SpringApplication.run : 스프링부트 애플리케이션을 실행시키는 메소드
 
 # 2. ResourceServerConfiguration.java
 <img width="530" alt="resourceserverconfiguration" src="https://user-images.githubusercontent.com/37721713/46646510-83800080-cbc5-11e8-8bc1-f17b9b8af610.PNG">
