@@ -13,16 +13,13 @@
 
 
 @Configuration - 스프링의 자바 기반 구성 클래스를 지정한다. 
-                          
-                            
                  스프링 컨테이너가 해당 클래스를 빈 정의의 소스로 사용한다는 의미
                                              
                                              
 @EnableAutoConfiguration - classpath를 기반으로 ApplicationContext가 생성될 수 있도록 하는 역할.
                             
                             
-@ComponentScan - 메인클래스가 위치한 root package를 기본 속성으로 사용하여 자동으로 다른 컴포넌트 클래스들을 
-                                             검색하여 빈으로 등록
+@ComponentScan - 메인클래스가 위치한 root package를 기본 속성으로 사용하여 자동으로 다른 컴포넌트 클래스들을 검색하여 빈으로 등록
                                              
                                              
 
