@@ -64,7 +64,11 @@
 <img width="530" alt="application" src="https://user-images.githubusercontent.com/37721713/46646495-76fba800-cbc5-11e8-9939-368c4a2d1fae.PNG">
 
 
-# 5. pom.xml
-<img width="530" alt="pom1" src="https://user-images.githubusercontent.com/37721713/46646505-7cf18900-cbc5-11e8-97ce-07be01941557.PNG">
+*security:oauth2:resource:token-info-uri
 
-<img width="530" alt="pom2" src="https://user-images.githubusercontent.com/37721713/46646507-80851000-cbc5-11e8-89c4-106b677bf4ae.PNG">
+    - OAuth 인가 서버를 지정한다. 해당 access token이 유효한지 확인할 수 있도록 하는 설정.
+    
+
+*logging:level:org.springframework.security
+
+    - org.springframework.security에만 로그 레벨을 디버그로 지정
