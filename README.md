@@ -45,6 +45,13 @@
     - ResourceOAuthSecurityConfiguration 클래스가 상속한 ResourceServerConfigurerAdapter는 ResourceServerConfigurer 인터페이스를 구현한 
       단순 창구역할을 하는 클래스이다. configure(ResourceServerSecurityConfigurer), configure(HttpSecurity) 두 메소드를 재정의해서 
       사용할 수 있다. 여기서는 configure(HttpSecurity)를 재정의하여 /test 리소스에 대한 접근을 제한한다.
+          
+    
+*configure(HttpSecurity http)
+
+    - 인터셉터로 request를 안전하게 보내기 위한 방법을 설정하는 메소드
+      애플리케이션으로 들어오는 HTTP 요청이 인증되기 위해서 authorizeRequests() 메소드를 호출한다.
+    
 
 # 3. SampleTest.java
 <img width="530" alt="sampletest" src="https://user-images.githubusercontent.com/37721713/46646512-85e25a80-cbc5-11e8-8e6c-c3aebc70e1b2.PNG">
